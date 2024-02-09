@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Garden Designs</title>
+</head>
+<body>
+<div class="page">
+    <h2><b>Garden Designs</b></h2>
+
+    <div class="row">
+        <div class="tabcolumn">
+            <div class="tabs">
+                <button class="Maps" onclick="openTab(event, 'maps')">Maps</button>
+                <button class="Design" onclick="openTab(event, 'Design')">Design</button>
+                <button class="Results" onclick="openTab(event, 'Results')">Results</button>
+            </div>
+
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.5320810702883!2d-122.6437667080939!3d45.66021774698476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495af035b1e7bf5%3A0xcc82a19ede58e619!2s2615%20NE%2053rd%20St%2C%20Vancouver%2C%20WA%2098663!5e0!3m2!1sen!2sus!4v1707340632431!5m2!1sen!2sus"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="design" class="tabcontent">
+                <h3>design</h3>
+                <p>Here is the next tab</p>
+            </div>
+            <div
+                id="Results"  class="tabcontent">
+                <h3>Results</h3>
+                <p>This is the Results page</p>
+            </div>
+
+        </div>
+        <div class="boxes">
+            <div class="item item-1">
+                <div>Width</div>
+                <input/>
+            </div>
+            <div class="item item-2">
+                <div>Height</div>
+                <input/>
+                <!--            <div class="item item-2">Height</div>-->
+            </div>
+            <div class="drop item-2">
+<!--                <div>Garden Type</div>-->
+                <div class="dropdown">
+                    <button class="dropbtn">Garden Type</button>
+                    <div class="dropdown-content">
+                        <a href="#">Flower Gardens</a>
+                        <a href="#">Formal Garden</a>
+                        <a href="#">Herb Garden</a>
+                        <a href="#">Container Garden</a>
+                        <a href="#">Woodland Garden</a>
+                        <a href="#">English Garden</a>
+                        <a href="#">Contemporary Garden</a>
+                        <a href="#">Japanese Garden</a>
+                        <a href="#">Mediterranean Garden</a>
+                        <a href="#">Biblical Garden</a>
+                        <a href="#">Bee Garden</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-2">
+<!--                <div>Include</div>-->
+                <div class="dropdown">
+                    <button class="dropbtn">Include</button>
+                    <div class="dropdown-content">
+                        <a href="#">Apples</a>
+                        <a href="#">Apricot</a>
+                        <a href="#">Artichokes</a>
+                        <a href="#">Arugula</a>
+                        <a href="#">Asparagus</a>
+                        <a href="#">Avocados</a>
+                        <a href="#">Banana</a>
+                        <a href="#">Bean Sprouts</a>
+                        <a href="#">Beetroot</a>
+                        <a href="#">Bell Pepper</a>
+                        <a href="#">Beetroot</a>
+                        <a href="#">Bitter greens</a>
+                        <a href="#">Blackberry</a>
+                        <a href="#">Blueberry</a>
+                        <a href="#">Boysenberry</a>
+                        <a href="#">Black radishes</a>
+                        <a href="#">borlotti Beans</a>
+                        <a href="#">Broccoli</a>
+                        <a href="#">Brussel sprouts</a>
+                        <a href="#">Button(or white) Mushrooms</a>
+                        <a href="#">Cantaloupe</a>
+                        <a href="#">Casaba Melon</a>
+                        <a href="#">Cabbage</a>
+                        <a href="#">Cardoon</a>
+                        <a href="#">Canary Melon</a>
+                        <a href="#">Carrots</a>
+                        <a href="#">Cauliflower</a>
+                        <a href="#">Celeriac</a>
+                        <a href="#">Chard</a>
+                        <a href="#">Cherry</a>
+                        <a href="#">Christmas Melon</a>
+                        <a href="#">Cherimoya</a>
+                        <a href="#">Chestnuts</a>
+                        <a href="#">Chickpeas</a>
+                        <a href="#">Celery</a>
+                        <a href="#">Cucumber</a>
+                        <a href="#">Cumin</a>
+                        <a href="#">Chinese artichoke</a>
+                        <a href="#">Dandelion Greens</a>
+                        <a href="#">Endives</a>
+                        <a href="#">Eggplant</a>
+                        <a href="#">Fava beans</a>
+                        <a href="#">Fennel</a>
+                        <a href="#">Flagolet Beans</a>
+                        <a href="#">Garlic</a>
+                        <a href="#">Ginger</a>
+                        <a href="#">Horseradish</a>
+                        <a href="#">Jerusalem</a>
+                        <a href="#">Lamb's Lettuce</a>
+                        <a href="#">Leeks</a>
+                        <a href="#">Lentils</a>
+                        <a href="#">Lettuce</a>
+                        <a href="#">Melons</a>
+                        <a href="#">Onions</a>
+                        <a href="#">Parsley</a>
+                        <a href="#">Parsnip</a>
+                        <a href="#">Pattypan Squash</a>
+                        <a href="#">Peas</a>
+                        <a href="#">Plantains</a>
+                        <a href="#">Purslane</a>
+                        <a href="#">Radishes</a>
+                        <a href="#">Red Kidney</a>
+                        <a href="#">Rosemary</a>
+                        <a href="#">Rutabaga</a>
+                        <a href="#">Salsify</a>
+                        <a href="#">Shallots</a>
+                        <a href="#">Sorrel</a>
+                        <a href="#">Soy</a>
+                        <a href="#">Spinach</a>
+                        <a href="#">Split peas</a>
+                        <a href="#">Squash</a>
+                        <a href="#">Soursop</a>
+                        <a href="#">Starfruit</a>
+                        <a href="#">Strawberry</a>
+                        <a href="#">Sweet corn</a>
+                        <a href="#">Sweet potatoes</a>
+                        <a href="#">Tangerine</a>
+                        <a href="#">Thyme</a>
+                        <a href="#">Tomato</a>
+                        <a href="#">Turnip</a>
+                        <a href="#">Ugi fruit</a>
+                        <a href="#">Watercress</a>
+                        <a href="#">Watermelon</a>
+                        <a href="#">Winter squash</a>
+                        <a href="#">White beans</a>
+                        <a href="#">Yams</a>
+                        <a href="#">Zucchini</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-2">
+<!--                <div>Exclude</div>-->
+                <div class="dropdown">
+                    <button class="dropbtn">Exclude</button>
+                    <div class="dropdown-content">
+                        <a href="#">Artichokes</a>
+                        <a href="#">Arugula</a>
+                        <a href="#">Asparagus</a>
+                        <a href="#">Avocados</a>
+                        <a href="#">Bean Sprouts</a>
+                        <a href="#">Beetroot</a>
+                        <a href="#">Bell Pepper</a>
+                        <a href="#">Beetroot</a>
+                        <a href="#">Bitter greens</a>
+                        <a href="#">Black radishes</a>
+                        <a href="#">borlotti Beans</a>
+                        <a href="#">Broccoli</a>
+                        <a href="#">Brussel sprouts</a>
+                        <a href="#">Button(or white) Mushrooms</a>
+                        <a href="#">Cabbage</a>
+                        <a href="#">Cardoon</a>
+                        <a href="#">Carrots</a>
+                        <a href="#">Cauliflower</a>
+                        <a href="#">Celeriac</a>
+                        <a href="#">Chard</a>
+                        <a href="#">Celery</a>
+                        <a href="#">Chestnuts</a>
+                        <a href="#">Chickpeas</a>
+                        <a href="#">Cucumber</a>
+                        <a href="#">Cumin</a>
+                        <a href="#">Chinese artichoke</a>
+                        <a href="#">Dandelion Greens</a>
+                        <a href="#">Endives</a>
+                        <a href="#">Eggplant</a>
+                        <a href="#">Fava beans</a>
+                        <a href="#">Fennel</a>
+                        <a href="#">Flagolet Beans</a>
+                        <a href="#">Garlic</a>
+                        <a href="#">Ginger</a>
+                        <a href="#">Horseradish</a>
+                        <a href="#">Jerusalem</a>
+                        <a href="#">Lamb's Lettuce</a>
+                        <a href="#">Leeks</a>
+                        <a href="#">Lentils</a>
+                        <a href="#">Lettuce</a>
+                        <a href="#">Melons</a>
+                        <a href="#">Onions</a>
+                        <a href="#">Parsley</a>
+                        <a href="#">Parsnip</a>
+                        <a href="#">Pattypan Squash</a>
+                        <a href="#">Peas</a>
+                        <a href="#">Plantains</a>
+                        <a href="#">Purslane</a>
+                        <a href="#">Radishes</a>
+                        <a href="#">Red Kidney</a>
+                        <a href="#">Rosemary</a>
+                        <a href="#">Rutabaga</a>
+                        <a href="#">Salsify</a>
+                        <a href="#">Shallots</a>
+                        <a href="#">Sorrel</a>
+                        <a href="#">Soy</a>
+                        <a href="#">Spinach</a>
+                        <a href="#">Split peas</a>
+                        <a href="#">Squash</a>
+                        <a href="#">Sweet corn</a>
+                        <a href="#">Sweet potatoes</a>
+                        <a href="#">Thyme</a>
+                        <a href="#">Tomato</a>
+                        <a href="#">Turnip</a>
+                        <a href="#">Watercress</a>
+                        <a href="#">Winter squash</a>
+                        <a href="#">White beans</a>
+                        <a href="#">Yams</a>
+                        <a href="#">Zucchini</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
