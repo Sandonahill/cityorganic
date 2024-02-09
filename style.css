@@ -109,7 +109,6 @@ input {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -144,4 +143,8 @@ input {
     border: 1px solid #ccc;
     border-top: none;
 }
-
+.checkArea {
+	display: flex;
+	flex-direction: row;
+}
+.checkArea:hover {background-color: #f1f1f1}
