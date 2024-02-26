@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css"/>
+	<script src="index.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,27 +13,26 @@
 <div class="page">
     <h2><b>Garden Designs</b></h2>
 
+
     <div class="row">
         <div class="tabcolumn">
-            <div class="tabs">
-                <button class="Maps" onclick="openTab(event, 'maps')">Maps</button>
-                <button class="Design" onclick="openTab(event, 'Design')">Design</button>
-                <button class="Results" onclick="openTab(event, 'Results')">Results</button>
+x<div class="tabs">
+                <button class="tabLinks" onclick="openTab(event, 'maps')">Maps</button>
+                <button class="tabLinks" onclick="openTab(event, 'design')">Design</button>
+                <button class="tabLinks" onclick="openTab(event, 'results')">Results</button>
             </div>
 
-            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.5320810702883!2d-122.6437667080939!3d45.66021774698476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495af035b1e7bf5%3A0xcc82a19ede58e619!2s2615%20NE%2053rd%20St%2C%20Vancouver%2C%20WA%2098663!5e0!3m2!1sen!2sus!4v1707340632431!5m2!1sen!2sus"
+            <iframe id="maps" class=tabcontent src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.5320810702883!2d-122.6437667080939!3d45.66021774698476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495af035b1e7bf5%3A0xcc82a19ede58e619!2s2615%20NE%2053rd%20St%2C%20Vancouver%2C%20WA%2098663!5e0!3m2!1sen!2sus!4v1707340632431!5m2!1sen!2sus"
                     allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div id="design" class="tabcontent">
                 <h3>design</h3>
                 <p>Here is the next tab</p>
             </div>
-            <div
-                id="Results"  class="tabcontent">
+            <div id="results"  class="tabcontent">
                 <h3>Results</h3>
                 <p>This is the Results page</p>
             </div>
-
         </div>
         <div class="boxes">
             <div class="item item-1">
@@ -49,17 +49,53 @@
                 <div class="dropdown">
                     <button class="dropbtn">Garden Type</button>
                     <div class="dropdown-content">
-                        <a href="#">Flower Gardens</a>
-                        <a href="#">Formal Garden</a>
-                        <a href="#">Herb Garden</a>
-                        <a href="#">Container Garden</a>
-                        <a href="#">Woodland Garden</a>
-                        <a href="#">English Garden</a>
-                        <a href="#">Contemporary Garden</a>
-                        <a href="#">Japanese Garden</a>
-                        <a href="#">Mediterranean Garden</a>
-                        <a href="#">Biblical Garden</a>
-                        <a href="#">Bee Garden</a>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Flower"/></label>
+							<a>Flower</a>
+						</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Formal"/></label>
+							<a>Formal</a>
+						</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Herb"/></label>
+							<a>Herb</a>
+						</div><div class="checkArea">
+						<label for="Artichokes"><input type="checkbox" id="Container"/></label>
+						<a>Container</a>
+					</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Woodland"/></label>
+							<a>Woodland</a>
+						</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="English"/></label>
+							<a>English</a>
+						</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Contemporary"/></label>
+							<a>Contemporary</a>
+						</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Japanese"/></label>
+							<a>Japanese</a>
+						</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Mediterrannean"/></label>
+							<a>Mediterrannean</a>
+						</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Biblical"/></label>
+							<a>Biblical</a>
+						</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Bee"/></label>
+							<a>Bee</a>
+						</div>
+						<div class="checkArea">
+							<label for="Artichokes"><input type="checkbox" id="Veggie"/></label>
+							<a>Veggie</a>
+						</div>
                     </div>
                 </div>
             </div>
@@ -107,10 +143,6 @@
 						<div class="checkArea">
 							<label for="Bell Pepper"><input type="checkbox" id="Bell Pepper"/></label>
 							<a>Bell Pepper</a>
-						</div>
-						<div class="checkArea">
-							<label for="Beetroot"><input type="checkbox" id="Beetroot"/></label>
-							<a>Beetroot</a>
 						</div>
 						<div class="checkArea">
 							<label for="Bitter greens"><input type="checkbox" id="Bitter greens"/></label>
@@ -665,10 +697,6 @@
 							<a>Bell Pepper</a>
 						</div>
 						<div class="checkArea">
-							<label for="BeetrootE"><input type="checkbox" id="BeetrootE"/></label>
-							<a>Beetroot</a>
-						</div>
-						<div class="checkArea">
 							<label for="Bitter greensE"><input type="checkbox" id="Bitter greensE"/></label>
 							<a>Bitter greens</a>
 						</div>
@@ -1113,7 +1141,7 @@
 							<a>Strawberry</a>
 						</div>
 						<div class="checkArea">
-							<label for="Sweet corn"><input type="checkbox" id="Sweet corn"/></label>
+							<label for="Sweet corn"><input type="checkbox" id="Sweet cornE"/></label>
 							<a>Sweet corn</a>
 						</div>
 						<div class="checkArea">
@@ -1157,7 +1185,7 @@
 							<a>Watermelon</a>
 						</div>
 						<div class="checkArea">
-							<label for="Winter squash"><input type="checkbox" id="Winter squash"/></label>
+							<label for="Winter squash"><input type="checkbox" id="Winter squashE"/></label>
 							<a>Winter squash</a>
 						</div>
 						<div class="checkArea">

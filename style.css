@@ -1,6 +1,7 @@
-body {
+body  {
     margin: 0;
-    height: 100vh
+    height: 100vh;
+    background-image:url("https://img.freepik.com/premium-vector/blank-frame-decorated-with-colorful-flowers-foliage-arranged-harmoniously-empty-poster-border_424947-4187.jpg");
 }
 .page {
     display: flex;
